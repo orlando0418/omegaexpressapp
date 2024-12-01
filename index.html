@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Paquetes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gestor de Paquetes</h1>
+  
+  <div>
+    <label for="fileUpload">Cargar archivo Excel:</label>
+    <input type="file" id="fileUpload" accept=".xlsx">
+  </div>
+
+  <div>
+    <label for="codeInput">Buscar código:</label>
+    <input type="text" id="codeInput" placeholder="Ingresa o escanea el código">
+    <button id="manualSearch">Buscar</button>
+  </div>
+
+  <div>
+    <button id="addColor">Agregar Color</button>
+  </div>
+
+  <div>
+    <button id="exportResults">Exportar Resultados</button>
+  </div>
+
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Color</th>
+        <th>Zona</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
